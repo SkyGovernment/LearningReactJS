@@ -1,5 +1,6 @@
 # LearningReactJS
-A playground of ReactJS Learning
+
+A playground for ReactJS Learning
 
 ```powershell
 npx create-react-app my-app
@@ -26,3 +27,10 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+**Components** are like JavaScript functions that accept inputs (called “props”) and return React elements describing what should appear on the screen.
+
+## Props are Read-Only
+
+>**All React components must act like pure functions with respect to their props.**
+
