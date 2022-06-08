@@ -1,7 +1,13 @@
 import logo from './Logo-BankKerajaanLangit.svg';
 import './App.css';
+import React from 'react';
 
 function App() {
+  const [todos] = React.useState([
+    "mehul","junid","hellios"
+  ]);
+
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +24,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <ul>
+        {
+          todos.map(todo => {
+            return <li>{todo}</li>
+          })
+        }
+      </ul>
     </div>
   );
 }
